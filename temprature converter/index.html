@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>temprature converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1 style="text-decoration-line: underline">Temprature Converter</h1>
+
+      <label id="lab">Degree Calsius:</label>
+      <input type="number" id="cel" value="0" class="inp" />
+      <label id="lab">Degree Fahrenheit :</label>
+      <input type="number" name="" id="fah" value="32" class="inp" />
+      
+
+      <!-- strart javascript coding -->
+      <script>
+        //    first declare variable
+
+
+        let Calsius = document.getElementById("cel");
+        let Fahrenheit = document.getElementById("fah");
+
+        //  add event listner to each every
+
+        Calsius.addEventListener("input", function () {
+          let c = this.value;
+          let f = (c * 9) / 5 + 32;
+
+          //   giving condition that decimal upto 4
+
+          if (!Number.isInteger(f)) {
+            f = f.toFixed(4);
+          }
+          Fahrenheit.value = f;
+        });
+
+        Fahrenheit.addEventListener("input", function () {
+          let f = this.value;
+          let c = ((f - 32) * 5) / 9;
+          if (!Number.isInteger(c)) {
+            c = c.toFixed(4);
+          }
+          Calsius.value = c;
+        });
+    
+      </script>
+    </div>
+  </body>
+</html>
