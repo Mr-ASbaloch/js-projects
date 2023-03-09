@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="changer">
+      <span id="voilet" class="btn" onclick="changecolor('#7fffd4')"> </span>
+      <span id="green" class="btn" onclick="changecolor('#ce9aff')"></span>
+      <span id="blue" class="btn" onclick="changecolor('#000000')"></span>
+    </div>
+    <h1 class="text">background color changer</h1>
+
+    <img src="./images/android-chrome-192x192.png" alt="image" />
+
+    <p class="text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, alias
+      ullam. Enim officia obcaecati, sunt cum ad magnam quam aut incidunt earum
+      vero impedit laudantium! Dolorem, aliquam sit optio impedit asperiores
+      nihil cum inventore neque quaerat error corporis tenetur assumenda vel
+      ducimus at quia. Quidem doloribus distinctio placeat, vero quasi omnis,
+      autem ab hic sequi illum, veritatis sit dolores maiores et explicabo
+      nesciunt blanditiis facere. Fugiat exercitationem quidem possimus repellat
+      vel esse distinctio. Sunt suscipit iste eos aut autem cumque amet magnam,
+      enim laudantium blanditiis non exercitationem impedit nisi repellat harum
+      quaerat saepe ratione esse magni quam. Dolorem distinctio, asperiores
+      perspiciatis animi, totam amet ea ad id rerum quisquam dignissimos illum,
+      qui tempore delectus accusantium commodi saepe sint earum deleniti ducimus
+      non reiciendis. Eaque quam deserunt sunt distinctio hic eius repellendus
+      tempore. Assumenda commodi recusandae dolor, laboriosam debitis facilis,
+      reiciendis minima atque ut dolorem quisquam harum perspiciatis, qui
+      tempora. Repellat autem eius vel illum, tempora numquam. Nostrum tempore
+      nesciunt eveniet excepturi impedit velit totam consequatur consequuntur
+      soluta cupiditate possimus facere quasi necessitatibus quis amet atque,
+      nisi ducimus odit expedita mollitia reiciendis id. Veritatis odio est quae
+      assumenda ea eveniet, ipsum nesciunt totam iusto maiores quisquam magni
+      doloribus ad? Dignissimos, nesciunt.
+    </p>
+
+    <script>
+      function changecolor(color) {
+        document.body.style.backgroundColor = color;
+
+        let txt = document.getElementsByClassName("text");
+
+        if (color == "#000000") {
+          for (let elm of txt) {
+            elm.style.color = "white";
+          }
+        } else {
+          for (let elm of txt) {
+            elm.style.color = "black";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

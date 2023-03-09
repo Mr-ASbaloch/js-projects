@@ -1,0 +1,34 @@
+body{
+    margin: auto 10%;
+    padding: auto;
+}
+h1{
+    text-align: center;
+    margin: 40px;
+    text-decoration: underline;
+}
+
+p{
+font-size: larger;
+ text-align: justify;
+}
+.btn{
+    border: 1px solid black;
+    border-radius: 50%;
+   float: right;
+   cursor: pointer;
+    width: 50px;
+    height: 50px;
+    
+}
+
+#voilet{
+    background-color:violet;
+}
+#green{
+    background-color: greenyellow;
+}
+#blue{
+    background-color:black;
+}
+
