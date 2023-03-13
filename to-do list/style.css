@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#main {
+  background-color: aqua;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+flex-wrap: wrap;
+}
+#addbtn{
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    background-color:gainsboro; 
+    padding: 5px;
+    border-radius: 5px;
+    color:black;
+}
+
+.note {
+  width: 400px;
+  border: 2px solid black;
+  height: 400px;
+  background-color: white;
+  margin: 15px;
+  margin-top: 45px;
+}
+.tool{
+    width: 100%;
+     background-color:black; 
+    height: 35px;
+    display: flex;
+    justify-content: end;
+
+}
+.tool i{
+    padding: 7px;
+    color: white;
+}
+ textarea{
+    width: 100%;
+    height: auto;
+    resize: none;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+
+
